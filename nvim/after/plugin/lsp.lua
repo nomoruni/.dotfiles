@@ -25,5 +25,8 @@ cmp.setup({
     -- Navigate between snippet placeholder
     ['<C-f>'] = cmp_action.luasnip_jump_forward(),
     ['<C-b>'] = cmp_action.luasnip_jump_backward(),
-  }
+  },
+  sources = {
+    { name = 'orgmode' }
+  },
 })

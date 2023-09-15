@@ -51,6 +51,14 @@ local plugins = {
 	},
 
 	{'norcalli/nvim-colorizer.lua'},
+	{'nvim-orgmode/orgmode',
+		dependencies = "nvim-treesitter/nvim-treesitter",
+		event = 'VeryLazy'},
+	{'lukas-reineke/headlines.nvim', 
+		dependencies = "nvim-treesitter/nvim-treesitter",
+		config = true,
+	},
+	{'akinsho/org-bullets.nvim'}
 }
 
 require("lazy").setup(plugins, opts)
