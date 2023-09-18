@@ -138,11 +138,12 @@ Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod, "shift"], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
-    Key([mod], "delete", lazy.spawn("rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu"), desc="Power Menu" ),
+    Key([mod], "delete", lazy.spawn("rofi -show power-menu -modi power-menu:/home/nomoruni/.config/rofi/rofi-power-menu"), desc="Power Menu" ),
     Key([mod, "shift"], "n", lazy.spawn("/home/nomoruni/.config/rofi/rofi-network-manager/rofi-network-manager.sh"), desc="Rofi Network Manager Menu" ),
     Key([mod, "shift"], "space", lazy.window.toggle_floating(), desc="Toggle Floating" ),
     Key([mod], "f", lazy.window.toggle_fullscreen(), desc="Toggle Fullscreen" ),
     Key([mod, "shift"], "b", lazy.spawn("rofi-bluetooth"), desc="Rofi Network Manager Menu" ),
+    Key([mod], "p", lazy.spawn("/home/nomoruni/.config/rofi/rofi-randr"), desc="Rofi Network Manager Menu" ),
 
 ###Programs Shortcuts Keys###
 
@@ -215,6 +216,83 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
         Screen(
+            bottom=bar.Bar(
+                [
+                    widget.CurrentLayout(),
+                    widget.GroupBox(
+                        highlight_method = 'block',
+                        this_current_screen_border='8ec07c',
+                        rounded = False,
+                        background = col_aqua_300,
+                        margin = 3,
+                        ),
+                    widget.Prompt(background = col_red_200, foreground = col_gray_300),
+                    widget.Sep(linewidth=0, padding=10),
+                    widget.TaskList(padding_y = 3,
+                                    margin_y = 0,
+                                    icon_size = 16,
+                                    txt_floating = "🗗 ",
+                                    txt_maximized = "🗖 ",
+                                    txt_minimized = "🗕 ",
+                                    rounded = False,
+                                    #borderwidth = 3, 
+                                    highlight_method = 'block',
+                                    border = '458588', 
+                                    max_title_width = 200),
+                    #widget.Chord(
+                    #    chords_colors={
+                    #        "launch": (col_red_200, col_gray_10),
+                    #        },
+                    #    name_transform=lambda name: name.upper(),
+                    #    ),
+                    widget.Sep(linewidth=-1, padding=5),
+                    widget.Systray(),
+                    widget.Sep(linewidth=0, padding=10),
+                    widget.Battery(battery = "CMB1",
+                                   format = '{char} {percent:2.0%} {watt:.2f}W',
+                                   background = col_green_200,
+                                   low_background = col_red_200, 
+                                   foreground = col_gray_300, 
+                                   low_foreground = col_gray_10,
+                                   charge_char = "󰂄", 
+                                   discharge_char = "󰁿", 
+                                   full_char = "󱟢",
+                                   empty_char = "󰂎", 
+                                   ),
+                    widget.Sep(linewidth=0, padding=5),
+                    widget.Clock(format="%d/%m/%Y %I:%M%p", background = col_yellow_100, foreground = col_gray_300),
+                    widget.Sep(linewidth=0, padding=5),
+                    widget.PulseVolume(background = col_orange_100, foreground = col_gray_200,limit_max_volume = True, fmt = '󰕾 {}'),
+                    widget.Sep(linewidth=0, padding=5),
+                    widget.Backlight(background = col_gray_20, foreground = col_gray_200, backlight_name = "intel_backlight", fmt = ' {}'),
+                    widget.Sep(linewidth=0, padding=5), 
+                    widget.WidgetBox([
+                        #widget.Bluetooth(background = col_yellow_100, foreground = col_gray_300), 
+                        widget.Sep(linewidth=0, padding=5),
+                        widget.CPU(background = col_blue_200, foreground = col_gray_300),
+                        widget.Sep(linewidth=0, padding=5),
+                        widget.Memory(background = col_red_100, foreground = col_gray_300),
+                        widget.Sep(linewidth=0, padding=5),
+                        widget.Net(background = col_purple_100, foreground = col_gray_300),
+                        ],
+                                     background = col_yellow_200, 
+                                     foreground = col_gray_300,
+                                     ),
+                    #widget.QuickExit(),
+                ],
+                24,
+                # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
+                # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+                background = col_gray_200,
+                foreground = col_gray_10,
+                ),
+                wallpaper = '/home/nomoruni/.config/qtile/Gruvbox/ALLqk82.png',
+                wallpaper_mode = 'fill',
+            ),
+            
+            #For dual Screen configuration
+
+            Screen(
             bottom=bar.Bar(
                 [
                     widget.CurrentLayout(),
