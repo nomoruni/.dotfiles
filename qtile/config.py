@@ -69,7 +69,12 @@ col_purple_200 = "#b16286"
 @hook.subscribe.startup_once
 def autostart():
     home = os.path.expanduser('~/.config/qtile/autostart.sh')
-    subprocess.Popen([home])
+    subprocess.Popen([home]) 
+
+
+@hook.subscribe.startup_complete
+def run_every_startup():
+    lazy.spawn("xgifwallpaper -v -s FILL /home/nomoruni/Datos/Fotos/Wallpaper/GIFs/pizza.gif")
 
 
 keys = [
@@ -216,7 +221,7 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
         Screen(
-            bottom=bar.Bar(
+            top=bar.Bar(
                 [
                     widget.CurrentLayout(),
                     widget.GroupBox(
@@ -293,7 +298,7 @@ screens = [
             #For dual Screen configuration
 
             Screen(
-            bottom=bar.Bar(
+            top=bar.Bar(
                 [
                     widget.CurrentLayout(),
                     widget.GroupBox(
