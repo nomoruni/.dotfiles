@@ -34,32 +34,80 @@ local plugins = {
 
 	{'dinhhuy258/git.nvim'},
 
-	{
-		'VonHeikemen/lsp-zero.nvim',
-		branch = 'v2.x',
-		dependencies = {
-			-- LSP Support
-			{'neovim/nvim-lspconfig'},             -- Required
-			{'williamboman/mason.nvim'},           -- Optional
-			{'williamboman/mason-lspconfig.nvim'}, -- Optional
+	{'williamboman/mason.nvim'},          
+	{'williamboman/mason-lspconfig.nvim'}, 
+	{'neovim/nvim-lspconfig'},            
 
-			-- Autocompletion
-			{'hrsh7th/nvim-cmp'},     -- Required
-			{'hrsh7th/cmp-nvim-lsp'}, -- Required
-			{'L3MON4D3/LuaSnip'},     -- Required
-		}
-	},
+	{'hrsh7th/nvim-cmp'},    
+	{'hrsh7th/cmp-nvim-lsp'},
+	{'hrsh7th/cmp-buffer'},
+	{'hrsh7th/cmp-path'},
+	{'hrsh7th/cmp-cmdline'},
+	{'L3MON4D3/LuaSnip'},    
+	{'saadparwaiz1/cmp_luasnip'},
 
 	{'norcalli/nvim-colorizer.lua'},
 	{'nvim-orgmode/orgmode',
-		dependencies = "nvim-treesitter/nvim-treesitter",
-		event = 'VeryLazy'},
+	dependencies = "nvim-treesitter/nvim-treesitter",
+	event = 'VeryLazy'},
 	{'lukas-reineke/headlines.nvim', 
-		dependencies = "nvim-treesitter/nvim-treesitter",
-		config = true,
-	},
-	{'akinsho/org-bullets.nvim'}
+	dependencies = "nvim-treesitter/nvim-treesitter",
+	config = true,
+        },
+        {'akinsho/org-bullets.nvim'},
+        {
+        	"utilyre/barbecue.nvim",
+        	name = "barbecue",
+        	version = "*",
+        	dependencies = {
+        		"smiteshp/nvim-navic",
+        		"nvim-tree/nvim-web-devicons", -- optional dependency
+        	},
+        	opts = {
+        		-- configurations go here
+        	},
+        },
+        
+        {
+        	"nvim-neo-tree/neo-tree.nvim",
+        	branch = "v3.x",
+        	dependencies = {
+        		"nvim-lua/plenary.nvim",
+        		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+        		"MunifTanjim/nui.nvim",
+        	}
+        },
+     
+	--Multiple Cursors
+        {
+            "smoka7/multicursors.nvim",
+            event = "VeryLazy",
+            dependencies = {
+                'smoka7/hydra.nvim',
+            },
+            opts = {},
+            cmd = { 'MCstart', 'MCvisual', 'MCclear', 'MCpattern', 'MCvisualPattern', 'MCunderCursor' },
+            keys = {
+                    {
+                        mode = { 'v', 'n' },
+                        '<Leader>m',
+                        '<cmd>MCstart<cr>',
+                        desc = 'Create a selection for selected text or word under the cursor',
+                    },
+                },
+        },
+
+
+	{
+		"neanias/everforest-nvim",
+		version = false,
+		lazy = false,
+		priority = 1000,
+		},
+
 }
+
+
 
 require("lazy").setup(plugins, opts)
 

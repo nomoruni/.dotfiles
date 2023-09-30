@@ -50,41 +50,52 @@
 </menu>
 
 <menu id="apps-office-menu" label="Office">
-  <item label="OpenOffice Base">
+  <item label="LibreOffice Writer">
     <action name="Execute">
-      <command>ooffice -base</command>
+      <command>libreoffice --writter</command>
     </action>
   </item>
-  <item label="OpenOffice Calc">
+  <item label="LibreOffice Writer">
     <action name="Execute">
-      <command>ooffice -calc</command>
+      <command>libreoffice --writter</command>
     </action>
   </item>
-  <item label="OpenOffice Draw">
+  <item label="LibreOffice Calc">
     <action name="Execute">
-      <command>ooffice -draw</command>
+      <command>libreoffice --calc</command>
     </action>
   </item>
-  <item label="OpenOffice Impress">
+  <item label="LibreOffice Draw">
     <action name="Execute">
-      <command>ooffice -impress</command>
+      <command>libreoffice --draw</command>
     </action>
   </item>
+  <item label="LibreOffice Impress">
+    <action name="Execute">
+      <command>libreoffice --impress</command>
+    </action>
+  </item>
+  <item label="LibreOffice Base">
+    <action name="Execute">
+      <command>libreoffice --base</command>
+    </action>
+  </item>
+  <item label="OpenOffice Global">
+    <action name="Execute">
+      <command>libreoffice --global</command>
+    </action>
+    </item>
   <item label="OpenOffice Math">
     <action name="Execute">
-      <command>ooffice -math</command>
+      <command>libreoffice --math</command>
     </action>
   </item>
-  <item label="OpenOffice Printer Administration">
+  <item label="OpenOffice Web">
     <action name="Execute">
-      <command>ooffice-printeradmin</command>
+      <command>libreoffice --web</command>
     </action>
   </item>
-  <item label="OpenOffice Writer">
-    <action name="Execute">
-      <command>ooffice -writer</command>
-    </action>
-  </item>
+
 </menu>
 
 <menu id="apps-multimedia-menu" label="Multimedia">

@@ -42,7 +42,7 @@ following: 'Mouse' - where the mouse is, or
 'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>gruvbox-material-dark</name>
+    <name>Umbra</name>
     <titleLayout>IMC</titleLayout>
     <!--
 available characters are NDSLIMC, each can occur at most once.
@@ -159,18 +159,18 @@ they are maximized, or when they are initially placed.
 Many programs reserve space automatically, but you can use this in other
 cases. -->
   <margins>
-    <top>5</top>
-    <bottom>5</bottom>
-    <left>5</left>
-    <right>5</right>
+    <top>0</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
   </margins>
   <dock>
     <position>Top</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
-    <noStrut>no</noStrut>
-    <stacking>Above</stacking>
+    <noStrut>yes</noStrut>
+    <stacking>Below</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
     <direction>Horizontal</direction>
     <!-- 'Vertical' or 'Horizontal' -->
@@ -475,6 +475,15 @@ cases. -->
           <name>Rofi-Network-Manager</name>
         </startupnotify>
         <command>~/.config/rofi/rofi-network-manager/rofi-network-manager.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-s">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Rofi-Screenshot</name>
+        </startupnotify>
+        <command>~/.config/rofi/rofi-screenshot</command>
       </action>
     </keybind>
     <keybind key="W-S-c">

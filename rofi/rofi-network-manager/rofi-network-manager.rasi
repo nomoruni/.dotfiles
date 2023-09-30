@@ -10,22 +10,27 @@ configuration {
 	scrollbar:		true;
 	font: "CaskaydiaCove NerdFont Mono 12";			//Font
 	//Colors
+	col-gray-10:  #fbf1c7;
+	col-gray-20:  #ebdbb2;
+	col-gray-30:  #bdae93;
+	col-gray-40:  #a89984;
+	col-gray-200:  #3c3836;
 	col-blue-300:  #458588;
         col-blue-200:  #83a598;
         col-aqua-300:  #689d6a;
         col-aqua-200:  #8ec07c;
-	foreground:#fbf1c7; 				//Text
-	background:@col-blue-200; 				//Background
+	foreground:@col-gray-200; 				//Text
+	background:@col-gray-40; 				//Background
 
 	scrollbar-handle:       @background;
-	accent:#fabd2f; 					//Highlight
+	accent:@col-gray-40; 					//Highlight
 	foreground-selection:@foreground; 	//Selection_fg
-	background-selection:#d79921; 		//Selection_bg
+	background-selection:@col-gray-20; 		//Selection_bg
 
-	transparent:					#282828;
+	transparent:					@col-gray-10;
 	background-color:				@transparent;
 	text-color:						@foreground;
-	selected-normal-foreground:		@transparent;
+	selected-normal-foreground:		@col-gray-200;
 	normal-foreground:       		@foreground;
 	alternate-normal-background:	@transparent;
 	selected-urgent-foreground:  	@foreground;
