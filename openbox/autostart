@@ -20,4 +20,4 @@ xclip &
 dunst -config "/home/nomoruni/.config/dunstrc" &
 nitrogen --restore &
 polybar &
-
+mpd .config/mpd/mpd.conf &

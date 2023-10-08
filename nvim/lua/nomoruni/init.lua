@@ -45,18 +45,8 @@ local plugins = {
 	{'hrsh7th/cmp-cmdline'},
 	{'L3MON4D3/LuaSnip'},    
 	{'saadparwaiz1/cmp_luasnip'},
-
 	{'norcalli/nvim-colorizer.lua'},
-	{'nvim-orgmode/orgmode',
-	dependencies = "nvim-treesitter/nvim-treesitter",
-	event = 'VeryLazy'},
-	{'lukas-reineke/headlines.nvim', 
-	dependencies = "nvim-treesitter/nvim-treesitter",
-	config = true,
-        },
-        {'akinsho/org-bullets.nvim'},
-        {
-        	"utilyre/barbecue.nvim",
+        {"utilyre/barbecue.nvim",
         	name = "barbecue",
         	version = "*",
         	dependencies = {
@@ -67,9 +57,7 @@ local plugins = {
         		-- configurations go here
         	},
         },
-        
-        {
-        	"nvim-neo-tree/neo-tree.nvim",
+        {"nvim-neo-tree/neo-tree.nvim",
         	branch = "v3.x",
         	dependencies = {
         		"nvim-lua/plenary.nvim",
@@ -77,10 +65,8 @@ local plugins = {
         		"MunifTanjim/nui.nvim",
         	}
         },
-     
 	--Multiple Cursors
-        {
-            "smoka7/multicursors.nvim",
+        {"smoka7/multicursors.nvim",
             event = "VeryLazy",
             dependencies = {
                 'smoka7/hydra.nvim',
@@ -104,7 +90,17 @@ local plugins = {
 		lazy = false,
 		priority = 1000,
 		},
+		{'feline-nvim/feline.nvim'},
+		{'nvim-orgmode/orgmode',
+			dependencies = {
+				{ 'nvim-treesitter/nvim-treesitter', lazy = true },
+			},
+			event = 'VeryLazy',
+		},
 
+	{'mfussenegger/nvim-dap',
+		"jay-babu/mason-nvim-dap.nvim",
+	},
 }
 
 

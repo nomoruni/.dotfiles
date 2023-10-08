@@ -29,26 +29,31 @@ always_run_script = true
 title = Dunst
 class = Dunst
 
+mouse_left_click = do_action
+mouse_middle_click = do_action, close_current
+mouse_right_click = close_all
+
+
 [shortcuts]
-close = ctrl+shift+space
-close_all = ctrl+shift+space
-history = ctrl+grave
-context = ctrl+shift+period
+#close = ctrl+shift+space
+#close_all = ctrl+shift+space
+#history = ctrl+grave
+#context = ctrl+shift+period
 
 [urgency_low]
-timeout = 4
+timeout = 3
 background = "#f6f7f1"
 foreground = "#947e7b"
 frame_color = "#f6f7f1"
 
 [urgency_normal]
-timeout = 8
+timeout = 5
 background = "#f6f7f1"
 foreground = "#947e7b"
 frame_color = "#947e7b"
 
 [urgency_critical]
-timeout = 0
+timeout = 8
 background = "#f6f7f1"
 foreground = "#947e7b"
 frame_color = "#947e7b"

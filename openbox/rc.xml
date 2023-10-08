@@ -43,7 +43,7 @@ following: 'Mouse' - where the mouse is, or
   </placement>
   <theme>
     <name>Umbra</name>
-    <titleLayout>IMC</titleLayout>
+    <titleLayout>DIMC</titleLayout>
     <!--
 available characters are NDSLIMC, each can occur at most once.
 N: window icon
@@ -362,6 +362,10 @@ cases. -->
         <menu>client-menu</menu>
       </action>
     </keybind>
+    <keybind key="W-f">
+      <action name="ToggleMaximize">
+      </action>
+    </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
@@ -413,7 +417,9 @@ cases. -->
         <direction>down</direction>
       </action>
     </keybind>
+
     <!-- Keybindings for running applications -->
+    
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
@@ -423,6 +429,7 @@ cases. -->
         <command>pcmanfm</command>
       </action>
     </keybind>
+
     <keybind key="W-Delete">
       <action name="Execute">
         <startupnotify>
@@ -432,6 +439,17 @@ cases. -->
         <command>rofi -show power-menu -modi power-menu:/home/nomoruni/.config/rofi/rofi-power-menu</command>
       </action>
     </keybind>
+
+    <keybind key="W-p">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Rofi-Randr</name>
+        </startupnotify>
+        <command>/home/nomoruni/.config/rofi/rofi-randr</command>
+      </action>
+    </keybind>
+
     <keybind key="W-Return">
       <action name="Execute">
         <startupnotify>
@@ -441,6 +459,7 @@ cases. -->
         <command>alacritty</command>
       </action>
     </keybind>
+
     <keybind key="W-d">
       <action name="Execute">
         <startupnotify>
@@ -450,6 +469,7 @@ cases. -->
         <command>rofi -show drun</command>
       </action>
     </keybind>
+
     <keybind key="W-w">
       <action name="Execute">
         <startupnotify>
@@ -459,15 +479,27 @@ cases. -->
         <command>firefox</command>
       </action>
     </keybind>
+
     <keybind key="W-r">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
           <name>Ranger</name>
         </startupnotify>
-        <command>alacritty -e ranger</command>
+        <command>alacritty --title Ranger -e ranger </command>
       </action>
     </keybind>
+
+    <keybind key="W-m">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>ncmpcpp</name>
+        </startupnotify>
+        <command>alacritty --title ncmpcpp -e ncmpcpp</command>
+      </action>
+    </keybind>
+
     <keybind key="W-S-n">
       <action name="Execute">
         <startupnotify>
@@ -477,6 +509,17 @@ cases. -->
         <command>~/.config/rofi/rofi-network-manager/rofi-network-manager.sh</command>
       </action>
     </keybind>
+
+    <keybind key="W-S-b">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Rofi-Network-Manager</name>
+        </startupnotify>
+        <command>rofi-bluetooth</command>
+      </action>
+    </keybind>
+
     <keybind key="W-S-s">
       <action name="Execute">
         <startupnotify>
@@ -486,6 +529,7 @@ cases. -->
         <command>~/.config/rofi/rofi-screenshot</command>
       </action>
     </keybind>
+
     <keybind key="W-S-c">
       <action name="Execute">
         <startupnotify>
@@ -495,6 +539,7 @@ cases. -->
         <command>xcolor -f HEX -s clipboard</command>
       </action>
     </keybind>
+
     <!--Volumen and Backlight Keystrokes -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">

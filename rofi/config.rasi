@@ -4,4 +4,4 @@ font: "CaskaydiaCove NerdFont 12";
 }
 
 //@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
-@theme "/usr/share/rofi/themes/gruvbox-light-soft.rasi"
+@theme "./gruvbox-light-soft.rasi"
