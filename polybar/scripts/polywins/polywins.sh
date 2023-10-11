@@ -4,7 +4,7 @@
 # SETTINGS {{{ ---
 
 
-active_text_color="#1D2021"
+active_text_color="#fbf1c7"
 active_underline="#F0C674"
 
 active_bg=

@@ -16,4 +16,4 @@ vim.keymap.set("n", "<leader>ll", "<cmd> Neotree toggle <CR>")
 vim.keymap.set("n","<leader>lb", "<cmd> Neotree buffers <CR>")
 
 vim.keymap.set("n", "<leader>ct", "<cmd> tabnew | :terminal <CR>")
-vim.keymap.set("n", "<leader>cv", "<cmd> split | :terminal <CR>")
+vim.keymap.set("n", "<leader>ch", "<cmd> split | :terminal <CR>")

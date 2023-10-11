@@ -1,8 +1,7 @@
 sw_volume: 100
 audio_device_state:1:pulseaudio
-state: pause
-current: 24
-time: 3096.447000
+state: stop
+current: 0
 random: 0
 repeat: 0
 single: 0
@@ -36,4 +35,5 @@ playlist_begin
 22:Un verano sin ti/Bad_Bunny_The_Marias_Otro_Atardecer_@moreradj_5354673502.mp3
 23:Un verano sin ti/Bad_Bunny_Tony_Dize_La_Corriente_@moreradj_5354673502.mp3
 24:9convert.com - ＭＩＤＮＩＧＨＴ Dark Trap and Wave Mix.mp3
+25:⁣Sickick - Talking to the Moon (Bruno Mars _ Trap Remix)(240P).mp4
 playlist_end

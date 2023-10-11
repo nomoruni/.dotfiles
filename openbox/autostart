@@ -17,7 +17,8 @@
 #xfce-mcs-manager &
 picom &
 xclip &
-dunst -config "/home/nomoruni/.config/dunstrc" &
+dunst -config "/home/nomoruni/.config/dunstrc_gruvbox" &
 nitrogen --restore &
 polybar &
+xset -dpms &
 mpd .config/mpd/mpd.conf &
