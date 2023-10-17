@@ -2,7 +2,7 @@ sw_volume: 100
 audio_device_state:1:pulseaudio
 state: stop
 current: 0
-random: 0
+random: 1
 repeat: 0
 single: 0
 consume: 0
@@ -10,30 +10,5 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Un verano sin ti/Bad Bunny_ Buscabulla - Andrea _ @moreradj (_5354673502).mp3
-1:Un verano sin ti/Bad Bunny - Agosto _ @moreradj (_5354673502).mp3
-2:Un verano sin ti/Bad Bunny - Aguacero _ @moreradj (_5354673502).mp3
-3:Un verano sin ti/Bad Bunny - Callaita _ @moreradj (_5354673502).mp3
-4:Un verano sin ti/Bad Bunny - Después De La Playa _ @moreradj (_5354673502).mp3
-5:Un verano sin ti/Bad Bunny - Dos Mil 16 _ @moreradj (_5354673502).mp3
-6:Un verano sin ti/Bad Bunny - Efecto _ @moreradj (_5354673502).mp3
-7:Un verano sin ti/Bad Bunny - El Apagón _ @moreradj (_5354673502).mp3
-8:Un verano sin ti/Bad Bunny - Enséñame a Bailar _ @moreradj (_5354673502).mp3
-9:Un verano sin ti/Bad Bunny - Me Fui De Vacaciones _ @moreradj (_5354673502).mp3
-10:Un verano sin ti/Bad Bunny - Moscow Mule _ @moreradj (_5354673502).mp3
-11:Un verano sin ti/Bad Bunny - Neverita _ @moreradj (_5354673502).mp3
-12:Un verano sin ti/Bad Bunny - Tití Me Preguntó _ @moreradj (_5354673502).mp3
-13:Un verano sin ti/Bad Bunny - Un Coco _ @moreradj (_5354673502).mp3
-14:Un verano sin ti/Bad Bunny - Un Ratito _ @moreradj (_5354673502).mp3
-15:Un verano sin ti/Bad Bunny - Un Verano Sin Ti _ @moreradj (_5354673502).mp3
-16:Un verano sin ti/Bad Bunny - Yo No Soy Celoso _ @moreradj (_5354673502).mp3
-17:Un verano sin ti/Bad Bunny_ Buscabulla - Andrea _ @moreradj (_5354673502).mp3
-18:Un verano sin ti/Bad Bunny_ Jhay Cortez - Tarot _ @moreradj (_5354673502).mp3
-19:Un verano sin ti/Bad Bunny_ Rauw Alejandro - Party _ @moreradj (_5354673502).mp3
-20:Un verano sin ti/Bad_Bunny_Bomba_Estéreo_Ojitos_Lindos_@moreradj_5354673502.mp3
-21:Un verano sin ti/Bad_Bunny_Chencho_Corleone_Me_Porto_Bonito_@moreradj_5354673502.mp3
-22:Un verano sin ti/Bad_Bunny_The_Marias_Otro_Atardecer_@moreradj_5354673502.mp3
-23:Un verano sin ti/Bad_Bunny_Tony_Dize_La_Corriente_@moreradj_5354673502.mp3
-24:9convert.com - ＭＩＤＮＩＧＨＴ Dark Trap and Wave Mix.mp3
-25:⁣Sickick - Talking to the Moon (Bruno Mars _ Trap Remix)(240P).mp4
+0:9convert.com - LoFi Heals Lofi Hip Hop Mix.mp3
 playlist_end

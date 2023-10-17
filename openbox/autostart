@@ -21,4 +21,5 @@ dunst -config "/home/nomoruni/.config/dunstrc_gruvbox" &
 nitrogen --restore &
 polybar &
 xset -dpms &
+xset s off &
 mpd .config/mpd/mpd.conf &
