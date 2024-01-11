@@ -1,0 +1,8 @@
+//@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+configuration {
+font: "CaskaydiaCove NerdFont 12";
+icon-theme: "Papirus-Dark";
+}
+
+@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+//@theme "./gruvbox-light-soft.rasi"

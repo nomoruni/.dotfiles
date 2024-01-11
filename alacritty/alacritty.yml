@@ -1,0 +1,30 @@
+import:
+ - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
+
+font:
+  normal:
+    family: CaskaydiaCoveNerdFont
+    style: Regular
+
+  bold:  
+    family: CaskaydiaCoveNerdFont
+    style: Bold
+
+  italic:
+    family: CaskaydiaCoveNerdFont
+    style: Italic
+
+  bold_italic:
+    family: CaskaydiaCoveNerdFont
+    style: Bold Italic
+
+  size: 11
+
+window:
+  dimensions:
+    columns: 90
+    lines: 25
+
+  padding:
+    x: 10
+    y: 10

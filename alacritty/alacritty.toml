@@ -1,0 +1,28 @@
+import = ["/home/nomoruni/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+
+[font]
+size = 11
+
+[font.bold]
+family = "CaskaydiaCoveNerdFont"
+style = "Bold"
+
+[font.bold_italic]
+family = "CaskaydiaCoveNerdFont"
+style = "Bold Italic"
+
+[font.italic]
+family = "CaskaydiaCoveNerdFont"
+style = "Italic"
+
+[font.normal]
+family = "CaskaydiaCoveNerdFont"
+style = "Regular"
+
+[window.dimensions]
+columns = 90
+lines = 25
+
+[window.padding]
+x = 10
+y = 10

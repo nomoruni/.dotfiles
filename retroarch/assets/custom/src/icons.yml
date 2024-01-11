@@ -1,0 +1,99 @@
+# This is a list of the RetroArch icons, mapped to Material Design icons.
+
+# Left: Retroarch Icon Name
+# Right: Material Design Icon Name
+
+achievement-list: trophy
+add-favorite: heart
+add: folder-plus
+arrow: chevron-left
+# The battery and clock icons are disabled due to sizing issues
+#battery-charging: battery-charging
+#battery-full: battery
+#clock: clock
+close: close-circle
+core-cheat-options: star-half
+core-disk-options: content-save-settings
+core-infos: information-outline
+core-input-remapping-options: google-controller
+core-options: settings
+core-shader-options: eye
+core: rocket
+cursor: bullseye
+ChaiLove-content: heart
+ChaiLove: heart-box
+database: database
+default-content: file
+default: folder
+DOS-content: floppy
+favorites-content: heart-box-outline
+favorites: heart-box
+Ffmpeg-conent: file-video
+Ffmpeg: video
+file: file
+folder: folder
+history: history
+image: image
+images: folder-image
+loadstate: upload
+Libretro - Pad: google-controller
+Lutro-content: heart
+Lutro: heart-box
+menu_achievements: trophy
+menu_audio: volume-high
+menu_drivers: screwdriver
+menu_exit: power
+menu_frameskip: skip-forward
+menu_help: help
+menu_info: information-outline
+menu_latency: timer
+menu_log: format-list-bulleted
+menu_mixer: tune
+menu_network: access-point-network
+menu_notifications: bell
+menu_osd: projector-screen
+menu_overlay: projector-screen
+menu_override: backburger
+menu_playlist: playlist-check
+menu_power: power
+menu_privacy: vpn
+menu_quickmenu: menu
+menu_record: record
+menu_rewind: rewind
+menu_saving: content-save
+menu_ui: camera-metering-matrix
+menu_updater: update
+menu_user: account-settings
+menu_video: movie
+menu_volume_max: volume-high
+menu_volume_med: volume-medium
+menu_volume_min: volume-low
+menu_volume_mute: volume-mute
+movie: file-video
+movies: video
+music: music-box-outline
+musics: music-box
+netplay: network
+netplay - LAN Room: console-network
+netplay - LAN Room-locked: close-network
+netplay - iRoom: access-point-network
+netplay - iRoom-locked: close-network
+netplay - rooms: account-network
+netplay - rooms-locked: close-network
+off: toggle-switch-off
+on: toggle-switch
+pointer: cursor-default
+reload: reload
+rename: rename-box
+resume: play-pause
+retroarch: home-circle
+room: lan-connect
+run: play
+savestate: download
+screenshot: camera
+setting: settings
+settings: settings-box
+subsetting: wrench
+undo: undo
+wifi: access-point
+zip: archive
