@@ -3,19 +3,19 @@ import:
 
 font:
   normal:
-    family: CaskaydiaCoveNerdFont
+    family: AgaveNerdFont
     style: Regular
 
   bold:  
-    family: CaskaydiaCoveNerdFont
+    family: AgaveNerdFont
     style: Bold
 
   italic:
-    family: CaskaydiaCoveNerdFont
+    family: AgaveNerdFont
     style: Italic
 
   bold_italic:
-    family: CaskaydiaCoveNerdFont
+    family: AgaveNerdFont
     style: Bold Italic
 
   size: 11

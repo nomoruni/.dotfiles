@@ -12,11 +12,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-	{"nvim-treesitter/nvim-treesitter", 
+	{"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate"},
-	{ "ellisonleao/gruvbox.nvim", 
-	priority = 1000, 
-	config = true, 
+	{ "ellisonleao/gruvbox.nvim",
+	priority = 1000,
+	config = true,
 	},
 	{"williamboman/mason.nvim"},
 	{"williamboman/mason-lspconfig.nvim"},
@@ -29,7 +29,7 @@ local plugins = {
 	{'L3MON4D3/LuaSnip'},
 	{'nvim-telescope/telescope.nvim', tag = '0.1.5',
 	dependencies = { 'nvim-lua/plenary.nvim' }},
-	{'j-morano/buffer_manager.nvim', 
+	{'j-morano/buffer_manager.nvim',
 	dependencies = { 'nvim-lua/plenary.nvim' }},
 	{'romgrk/barbar.nvim',
 	dependencies = {
@@ -37,12 +37,8 @@ local plugins = {
 		'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
 	},
 	init = function() vim.g.barbar_auto_setup = false end,
-	opts = {
-		-- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-		-- animation = true,
-		-- insert_at_start = true,
-		-- …etc.
-	},
+		opts = {
+    		},
 	},
 	{'nvim-lualine/lualine.nvim',
     	dependencies = { 'nvim-tree/nvim-web-devicons' }}

@@ -13,7 +13,7 @@ time_formatted=$(date "+%H:%M")
 volumen=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer sget Master))
 
 # Get the Linux version but remove the "-1-ARCH" part
-linux_version=$(uname -r | cut -d '-' -f1)
+# linux_version=$(uname -r | cut -d '-' -f1)
 
 # Returns the battery status: "Full", "Discharging", or "Charging".
 battery_status=$(cat /sys/class/power_supply/CMB1/capacity)
@@ -56,5 +56,11 @@ fi
 if [[ $battery_status -lt 15 ]]; then
   bat_icon=""
 fi
-  
-echo $net_icon_wlan " " $net_icon_eth " " $net_icon_eth_2 " "  $volumen " " 󱊣 $battery_status% $bat_icon " "  $date_formatted " "  $time_formatted " "
+
+#if [[ $battery_status == 10 ]]; then
+#  exec notify-send 'Battery at 10%, charge now!' 
+#else
+
+
+echo $net_icon_wlan " " $net_icon_eth " " $net_icon_eth_2 "  " "  "$volumen " " 󱊣 $battery_status% $bat_icon " " "  "$date_formatted " " "  "$time_formatted " "
+

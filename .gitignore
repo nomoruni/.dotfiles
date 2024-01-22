@@ -22,7 +22,11 @@ menus/
 mpv/
 neofetch/
 nomacs/
+nnn/
 pavucontrol-qt/
+procps/
+pupgui/
+retroarch/
 pulse/
 TeamSpeak/
 vlc/
@@ -33,6 +37,7 @@ gtkrc
 gtkrc-2.0
 mimeapps.list
 okularrc
+okularpartrc
 pavucontrol.ini
 QtProject.conf
 user-dirs.dirs

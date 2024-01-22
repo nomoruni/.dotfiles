@@ -25,8 +25,8 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term alacritty
-set $nav chromium
-set $filex pcmanfm
+set $nav firefox
+set $filex nemo
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -37,7 +37,7 @@ set $menu rofi -show drun
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 
-output * bg /home/nomoruni/Datos/Fotos/Wallpaper/Starfield/9968314.jpg fill
+output * bg /home/nomoruni/Datos/Fotos/Wallpaper/new/u7r65d0l2lk31.jpg fill
 
 #
 # Example configuration:
@@ -83,11 +83,17 @@ output * bg /home/nomoruni/Datos/Fotos/Wallpaper/Starfield/9968314.jpg fill
     # Start your music player
     bindsym $mod+m exec alacritty -e ncmpcpp
 
-    # Start your music player
+    # Pick a color
     bindsym $mod+c exec wl-color-picker clipboard
+
+    # Pick a color
+    bindsym $mod+s exec ~/.config/rofi/rofi-screenshot-wayland.sh
 
     # Screenshot
     bindsym Print exec grim
+
+    # Screenshot
+    bindsym $mod+p exec ~/.config/sway/wlsunset.sh
 
     # Open Rofi Apps 
     bindsym $mod+Delete exec rofi -show power-menu -modi power-menu:/home/nomoruni/.config/rofi/rofi-power-menu
@@ -205,8 +211,8 @@ output * bg /home/nomoruni/Datos/Fotos/Wallpaper/Starfield/9968314.jpg fill
 #
 # Screen and Audio Keybinds
 #
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% 
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% 
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% & ~/.config/sway/volume-notify.sh 
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% & ~/.config/sway/volume-notify.sh
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
@@ -244,7 +250,6 @@ mode "resize" {
     bindsym Escape mode "default"
 
     # Moving the windows
-    
     bindsym Mod1+$left exec swaymsg move left 40px
     bindsym Mod1+$down exec swaymsg move down 40px
     bindsym Mod1+$up exec swaymsg move up 40px
@@ -262,13 +267,13 @@ bindsym $mod+r mode "resize"
   for_window [window_type="menu"] floating enable
   for_window [instance="update_installer"] floating enable
   for_window [title="(?:Open|Save) (?:File|Folder|As)"] floating enable, resize set width 1030 height 710
-  for_window [class="Pcmanfm"] floating enable
+  for_window [app_id="nemo"] floating enable
   for_window [class="KiCad"] floating enable
   for_window [class="Windscribe2"] floating enable
   for_window [app_id="lutris"] floating enable
   for_window [app_id="xarchiver"] floating enable
 
-  
+  for_window [shell="xwayland"] title_format "[XWayland] %title"
 
 
 ### ENABLE FLOATING ALL WINDOWS ###
@@ -289,7 +294,7 @@ bar {
     status_command while ~/.config/sway/status.sh; do sleep 1; done
 
     gaps 5
-    font caskaydiacovenerdfont
+    font agavenerdfont 
     height 28
 
     icon_theme Papirus-Dark
@@ -329,5 +334,6 @@ default_border pixel 3
 default_floating_border pixel 3
 gaps inner 5
 seat seat0 xcursor_theme Simp1e 14
+font pango:agavenerdfont 12
 
 include /etc/sway/config.d/*

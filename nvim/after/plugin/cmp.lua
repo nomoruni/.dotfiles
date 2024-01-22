@@ -15,8 +15,10 @@ local cmp = require'cmp'
       documentation = cmp.config.window.bordered(),
     },
     mapping = cmp.mapping.preset.insert({
-      ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+      ['<C-d>'] = cmp.mapping.scroll_docs(-4),
       ['<C-f>'] = cmp.mapping.scroll_docs(4),
+      ['<C-j>'] = cmp.mapping.select_next_item(),
+      ['<C-k>'] = cmp.mapping.select_prev_item(),
       ['<C-Space>'] = cmp.mapping.complete(),
       ['<C-e>'] = cmp.mapping.abort(),
       ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
@@ -62,6 +64,24 @@ local cmp = require'cmp'
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').default_capabilities()
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  --require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
-  --  capabilities = capabilities
-  --}
+  require('lspconfig')['pyright'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['rust_analyzer'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['bashls'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['cssls'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['jsonls'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['lemminx'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['lua_ls'].setup {
+    capabilities = capabilities
+  }
