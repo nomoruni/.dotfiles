@@ -80,7 +80,7 @@ keys = [
     Key([mod1], "Tab", lazy.group.next_window(), desc="Toggle between layouts"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
-    Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
+    # Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     # Key([mod, "shift"], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
     Key([mod], "delete", lazy.spawn("rofi -show power-menu -modi power-menu:/home/nomoruni/.config/rofi/rofi-power-menu"), desc="Power Menu" ),
     Key([mod, "shift"], "space", lazy.window.toggle_floating(), desc="Toggle Floating" ),
@@ -90,7 +90,7 @@ keys = [
 
     Key([mod], "d", lazy.spawn("rofi -show drun"), desc="Rofi Menu" ),
     Key([mod], "w", lazy.spawn("firefox"), desc="Firefox" ),
-    Key([mod], "e", lazy.spawn("pcmanfm"), desc="PcManFM" ),
+    Key([mod], "e", lazy.spawn("nemo"), desc="Nemo" ),
     # Key([mod], "r", lazy.spawn("kitty NNN_FIFO=/tmp/nnn.fifo nnn -a"), desc="Yazi File Manager" ),
     Key([mod], "b", lazy.spawn("rofi-bluetooth"), desc="Rofi Bluetooth Manager Menu" ),
     Key([mod], "p", lazy.spawn("/home/nomoruni/.config/rofi/rofi-randr"), desc="Rofi Randr" ),

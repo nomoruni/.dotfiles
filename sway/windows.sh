@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Get regular windows
-regular_windows=$(swaymsg -t get_tree | jq -r '.nodes[1].nodes[].nodes[] | .. | (.id|tostring) + " " + .name?' | grep -e "[0-9]* ."  )
+regular_windows=$(swaymsg -t get_tree | jq -r '.nodes[1].nodes[].nodes[] | (.id|tostring) + " 󰘔  " + .app_id? + " - " + .name?' | grep -e "[0-9]* ."  )
 
 # Get floating windows
-floating_windows=$(swaymsg -t get_tree | jq '.nodes[1].nodes[].floating_nodes[] | (.id|tostring) + " " + .name?'| grep -e "[0-9]* ." | tr -d '"')
+floating_windows=$(swaymsg -t get_tree | jq '.nodes[1].nodes[].floating_nodes[] | (.id|tostring) + " 󰶮  " + .app_id? + " - " + .name?'| grep -e "[0-9]* ." | tr -d '"')
 
 enter=$'\n'
 if [[ $regular_windows && $floating_windows ]]; then

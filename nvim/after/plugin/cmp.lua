@@ -85,3 +85,6 @@ local cmp = require'cmp'
   require('lspconfig')['lua_ls'].setup {
     capabilities = capabilities
   }
+  require('lspconfig')['asm_lsp'].setup {
+    capabilities = capabilities
+  }

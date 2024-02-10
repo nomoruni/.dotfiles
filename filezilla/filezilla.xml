@@ -143,8 +143,8 @@
 					<EncodingType>Auto</EncodingType>
 					<BypassProxy>0</BypassProxy>
 					<Site></Site>
-					<RemotePath>1 0 11 Universidad 21 Modelado y Simulación</RemotePath>
-					<LocalPath>/home/nomoruni/Datos/Universidad/4to Año/2do Semestre/Modelado y Simulación/Mieles/</LocalPath>
+					<RemotePath>1 0</RemotePath>
+					<LocalPath>/home/nomoruni/Datos/Development/Programación/</LocalPath>
 				</Tab>
 			</Tabs>
 		</Setting>

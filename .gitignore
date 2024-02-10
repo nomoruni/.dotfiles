@@ -1,9 +1,12 @@
+arduino-ide/
+Arduino\ IDE/
 autostart/
 chromium/
 dconf/
 evolution/
 falkTX/
 gh/
+ghb/
 GIMP/
 glib-2.0/
 gpick/
@@ -29,6 +32,7 @@ pupgui/
 retroarch/
 pulse/
 TeamSpeak/
+Thunar/
 vlc/
 Windscribe/
 xarchiver/

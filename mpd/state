@@ -1,9 +1,7 @@
 sw_volume: 100
 audio_device_state:1:pulseaudio
-state: pause
-current: 16
-time: 1326.505000
-random: 1
+state: stop
+random: 0
 repeat: 0
 single: 0
 consume: 0
@@ -11,23 +9,9 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:9convert.com - LoFi Heals Lofi Hip Hop Mix.mp3
-1:Drake-Demons/Drake - Deep Pockets (320).mp3
-2:Drake-Demons/Drake - When To Say When (320).mp3
-3:Drake-Demons/Drake, Giveon - Chicago Freestyle (320).mp3
-4:Drake-Demons/Drake, Chris Brown - Not You Too (320).mp3
-5:Drake-Demons/Drake - Toosie Slide (320).mp3
-6:Drake-Demons/Drake, Future - Desires (320).mp3
-7:Drake-Demons/Drake - Time Flies (320).mp3
-8:Drake-Demons/Drake - Landed (320).mp3
-9:Drake-Demons/Future, Drake, Young Thug - D4L (320).mp3
-10:Drake-Demons/Drake, Playboi Carti - Pain 1993 (320).mp3
-11:Drake-Demons/Drake - Losses (320).mp3
-12:Drake-Demons/Drake - From Florida With Love (320).mp3
-13:Drake-Demons/Drake, Fivio Foreign, Sosa Geek - Demons (320).mp3
-14:Drake-Demons/Drake - War (320).mp3
-15:musicforprograming.net/music_for_programming_1-datassette.mp3
-16:musicforprograming.net/music_for_programming_23-panda_magic.mp3
-17:musicforprograming.net/music_for_programming_28-big_war.mp3
-18:musicforprograming.net/music_for_programming_6-gods_of_the_new_age.mp3
+0:Kimiko_y_Yordy_-_Danita_respuesta_a_coño_negra(256kbps).mp3
+1:XXXtentation-Hope.mp4
+2:ywfS9zuZJR4XMFvkOyrjgrSd1yRTK8zSneg3YZVwky2f16Kv4f_22_a96ed6a3c29d78142897e53c4d597c85_video.mp4
+3:Masked Wolf - Astronaut In The Ocean (Onderkoffer Remix)(480P).mp4
+4:Imagine Dragon- Bad Liar.mp4
 playlist_end

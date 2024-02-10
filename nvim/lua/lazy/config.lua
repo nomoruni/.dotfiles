@@ -13,7 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 	{"nvim-treesitter/nvim-treesitter",
-	build = ":TSUpdate"},
+	build = ":TSUpdate",
+	dependencies = {'rush-rs/tree-sitter-asm'}},
 	{ "ellisonleao/gruvbox.nvim",
 	priority = 1000,
 	config = true,

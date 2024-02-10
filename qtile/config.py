@@ -156,12 +156,13 @@ floating_layout = layout.Floating(
             # Match(wm_class="feh"),             
             # Match(wm_class="vlc"),
             Match(wm_class="Windscribe"),
-            Match(wm_class="pcmanfm"), 
+            Match(wm_class="nemo"), 
+            Match(wm_class="Scilab"), 
             # Match(wm_class="VirtualBox Manager"),
             ], 
         border_width=1,
         margin=5,
-        border_focus = col_yellow_100,
+        border_focus = col_blue_200,
         border_normal = col_gray_300 
         )
 

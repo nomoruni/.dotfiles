@@ -12,7 +12,7 @@ exec mako
 exec mpd
 exec_always autotiling
 
-bindswitch --reload --locked lid:on exec swaylock -i /home/nomoruni/.config/sway/locked.png --indicator-y-position 650 --indicator-radius 20 
+bindswitch --reload --locked lid:on exec swaylock -i /home/nomoruni/.config/sway/locked.png --indicator-y-position 650 --indicator-radius 20 --font-size 0
 
 ### Variables
 #
@@ -26,7 +26,7 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 set $nav firefox
-set $filex nemo
+set $filex thunar
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -37,7 +37,7 @@ set $menu rofi -show drun
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 
-output * bg /home/nomoruni/Datos/Fotos/Wallpaper/new/u7r65d0l2lk31.jpg fill
+output * bg /home/nomoruni/Datos/Fotos/Wallpaper/new/fkfxk6hl7pp41.jpg fill
 
 #
 # Example configuration:
@@ -113,6 +113,9 @@ output * bg /home/nomoruni/Datos/Fotos/Wallpaper/new/u7r65d0l2lk31.jpg fill
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
+
+    # Windows menu
+    bindsym $mod+Tab exec ~/.config/sway/windows.sh
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -267,13 +270,14 @@ bindsym $mod+r mode "resize"
   for_window [window_type="menu"] floating enable
   for_window [instance="update_installer"] floating enable
   for_window [title="(?:Open|Save) (?:File|Folder|As)"] floating enable, resize set width 1030 height 710
-  for_window [app_id="nemo"] floating enable
+  for_window [app_id="thunar"] floating enable
   for_window [class="KiCad"] floating enable
   for_window [class="Windscribe2"] floating enable
   for_window [app_id="lutris"] floating enable
   for_window [app_id="xarchiver"] floating enable
 
   for_window [shell="xwayland"] title_format "[XWayland] %title"
+  for_window [class="Scilab"] floating enable
 
 
 ### ENABLE FLOATING ALL WINDOWS ###

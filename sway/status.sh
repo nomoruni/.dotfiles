@@ -41,6 +41,10 @@ else
   net_icon_wlan="󰖪"
 fi
 
+if [[ $battery_status -lt 15 ]]; then
+  bat_icon=""
+fi
+
 if [[ "$battery_status_chargin" == "Charging" ]]; then
   bat_icon="󱐋"
 fi
@@ -53,9 +57,6 @@ if [[ "$battery_status_chargin" == "Not charging" ]]; then
   bat_icon=""
 fi
 
-if [[ $battery_status -lt 15 ]]; then
-  bat_icon=""
-fi
 
 #if [[ $battery_status == 10 ]]; then
 #  exec notify-send 'Battery at 10%, charge now!' 
