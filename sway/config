@@ -87,10 +87,10 @@ output * bg /home/nomoruni/Datos/Fotos/Wallpaper/new/fkfxk6hl7pp41.jpg fill
     bindsym $mod+c exec wl-color-picker clipboard
 
     # Pick a color
-    bindsym $mod+s exec ~/.config/rofi/rofi-screenshot-wayland.sh
+    bindsym Print exec ~/.config/rofi/rofi-screenshot-wayland.sh
 
     # Screenshot
-    bindsym Print exec grim
+    # bindsym Print exec grim
 
     # Screenshot
     bindsym $mod+p exec ~/.config/sway/wlsunset.sh
@@ -99,7 +99,7 @@ output * bg /home/nomoruni/Datos/Fotos/Wallpaper/new/fkfxk6hl7pp41.jpg fill
     bindsym $mod+Delete exec rofi -show power-menu -modi power-menu:/home/nomoruni/.config/rofi/rofi-power-menu
     bindsym $mod+n exec /home/nomoruni/.config/rofi/rofi-network-manager/rofi-network-manager.sh
     bindsym $mod+g exec rofi -show emoji -modi emoji
-    bindsym $mod+b exec rofi-bluetooth
+    bindsym $mod+b exec ~/.config/rofi/rofi-bluetooth.sh
     bindsym XF86Calculator exec rofi -show calc -modi emoji
 
 
