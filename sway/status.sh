@@ -23,6 +23,8 @@ network_wlan=$(networkctl status wlan0 | grep 'Online state: online')
 network_eth=$(networkctl status enp0s31f6 | grep 'Online state: online')
 network_eth_2=$(networkctl status enp0s20f0u1 | grep 'Online state: online')
 
+vnc=$(ps -a | grep wayvnc)
+
 if [[ $network_eth_2 ]]; then
   net_icon_eth="󰣺"
 else
@@ -31,12 +33,14 @@ fi
 
 if [[ $network_eth ]]; then
   net_icon_eth_2="󰈁"
+  ip_e=$(ip add | grep enp0s31f6 | awk 'NR>1 && NR<3 && NF=2 { print $2 }')
 else
   net_icon_eth_2="󰈂"
 fi
 
 if [[ $network_wlan ]]; then
   net_icon_wlan="󰖩"
+  ip_w=$(ip add | grep wlan | awk 'NR>1 && NR<3 && NF=2 { print $2 }')
 else
   net_icon_wlan="󰖪"
 fi
@@ -57,11 +61,18 @@ if [[ "$battery_status_chargin" == "Not charging" ]]; then
   bat_icon=""
 fi
 
+if [[ $vnc ]]; then
+	vnc_icon=" "
+else
+	vnc_icon=" "
+fi
+
 
 #if [[ $battery_status == 10 ]]; then
 #  exec notify-send 'Battery at 10%, charge now!' 
 #else
 
 
-echo $net_icon_wlan " " $net_icon_eth " " $net_icon_eth_2 "  " "  "$volumen " " 󱊣 $battery_status% $bat_icon " " "  "$date_formatted " " "  "$time_formatted " "
+echo $ip_e " " $ip_w " " $net_icon_wlan " " $net_icon_eth " " $net_icon_eth_2 " " $vnc_icon "  " "  "$volumen " " 󱊣 $battery_status% $bat_icon " " "  "$date_formatted " " "  "$time_formatted " "
+
 

@@ -74,6 +74,7 @@ col_purple_200 = "#b16286"
 @hook.subscribe.startup_once
 def autostart():
     lazy.spawn('sh /home/nomoruni/.config/qtile/autostart.sh') 
+    lazy.spawn('seat seat0 xcursor_theme Simp1e') 
 
 
 # @hook.subscribe.startup_complete

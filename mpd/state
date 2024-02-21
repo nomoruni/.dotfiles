@@ -1,6 +1,8 @@
 sw_volume: 100
 audio_device_state:1:pulseaudio
-state: stop
+state: pause
+current: 9
+time: 12.021000
 random: 0
 repeat: 0
 single: 0
@@ -9,9 +11,27 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Kimiko_y_Yordy_-_Danita_respuesta_a_coño_negra(256kbps).mp3
-1:XXXtentation-Hope.mp4
-2:ywfS9zuZJR4XMFvkOyrjgrSd1yRTK8zSneg3YZVwky2f16Kv4f_22_a96ed6a3c29d78142897e53c4d597c85_video.mp4
-3:Masked Wolf - Astronaut In The Ocean (Onderkoffer Remix)(480P).mp4
-4:Imagine Dragon- Bad Liar.mp4
+0:Troyboi/[Trap]Troyboi ft. Amar - AJA AJA (Original Mix) myfreemp3.vip .mp3
+1:Troyboi/Justin Bieber - Red Eye (feat.TroyBoi) myfreemp3.vip .mp3
+2:Troyboi/TroyBoi - Baby (Original Mix) myfreemp3.vip .mp3
+3:Troyboi/TroyBoi - BAILE (Original Mix) myfreemp3.vip .mp3
+4:Troyboi/TroyBoi - Bellz (Original Mix) myfreemp3.vip .mp3
+5:Troyboi/TroyBoi - BUSS IT (Official Music Video) myfreemp3.vip .mp3
+6:Troyboi/TroyBoi - Clear Waters myfreemp3.vip .mp3
+7:Troyboi/TroyBoi - Eyez On Me (feat. Nina Sky) myfreemp3.vip .mp3
+8:Troyboi/TroyBoi - GWARN [128] myfreemp3.vip .mp3
+9:Troyboi/TroyBoi - Inspirado En Mexico [128 kbps] myfreemp3.vip .mp3
+10:Troyboi/TroyBoi - Left Is Right myfreemp3.vip .mp3
+11:Troyboi/TroyBoi - Lemme See (feat. Eric Leon) myfreemp3.vip .mp3
+12:Troyboi/TroyBoi - MADTING [vk.com_hithotmusic] #Trap myfreemp3.vip .mp3
+13:Troyboi/troyBoi - Mmmm myfreemp3.vip .mp3
+14:Troyboi/TroyBoi - Mother Africa (Original Mix) myfreemp3.vip .mp3
+15:Troyboi/TroyBoi - Never Felt This Way myfreemp3.vip .mp3
+16:Troyboi/TroyBoi - The Truth [hithotmusic] Trap myfreemp3.vip .mp3
+17:Troyboi/TroyBoi - Tranquilizer (feat. Adekunle Gold) myfreemp3.vip .mp3
+18:Troyboi/TroyBoi - Unstoppable myfreemp3.vip .mp3
+19:Troyboi/TroyBoi & Chris Marshall - Gyal [vk.com_hithotmusic] #Moombahton myfreemp3.vip .mp3
+20:Troyboi/TroyBoi & Tropkillaz - Corneta (Original Mix) myfreemp3.vip .mp3
+21:Troyboi/TroyBoi feat. yasaquarius - HIGH (feat. yasaquarius) myfreemp3.vip .mp3
+22:Troyboi/TroyBoi, Destructo - You're the One For Me myfreemp3.vip .mp3
 playlist_end

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1707491414938240-1</unique-id>
+	<command>alacritty --working-directory %f</command>
+	<description>Example for a custom action</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>nvim</icon>
+	<name>Edit with Neovim</name>
+	<submenu></submenu>
+	<unique-id>1707492174019343-1</unique-id>
+	<command>alacritty -e nvim %f</command>
+	<description>Edit the file with Neovim</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>application-x-compress</icon>
+	<name>Compress file...</name>
+	<submenu></submenu>
+	<unique-id>1707527449972150-1</unique-id>
+	<command>xarchiver -c %f</command>
+	<description>Compress de file with Xarchiver</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>cm_extractfiles</icon>
+	<name>Extract Here</name>
+	<submenu></submenu>
+	<unique-id>1708200378553468-1</unique-id>
+	<command>xarchiver -ed %f</command>
+	<description>Extract the file in this folder with Xarchiver</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
+</actions>

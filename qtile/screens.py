@@ -123,6 +123,7 @@ screens = [
             
             #For dual Screen configuration
 
+
         Screen(
             bottom=bar.Bar(
                 [

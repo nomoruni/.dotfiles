@@ -4,6 +4,9 @@ vim.g.maplocalleader = ' '
 -- Open file manager --
 vim.keymap.set("n", "<leader>fm", vim.cmd.Ex)
 
+-- Jump to definitions
+vim.keymap.set("n", "<leader>jd", "<C-]>")
+
 -- Buffers --
 vim.keymap.set("n", "<A-l>", vim.cmd.bnext)
 vim.keymap.set("n", "<A-h>", vim.cmd.bprevious)
